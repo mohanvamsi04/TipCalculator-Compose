@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.mvb.tipcalculator"
+    namespace = "com.mvb.tiplify"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.mvb.tipcalculator"
+        applicationId = "com.mvb.tiplify"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.mvb.tipcalculator
+package com.mvb.tiplify
 
 import org.junit.Test
 

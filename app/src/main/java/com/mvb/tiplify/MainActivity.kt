@@ -1,4 +1,4 @@
-package com.mvb.tipcalculator
+package com.mvb.tiplify
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.animation.core.animateIntAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
-import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -28,7 +27,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mvb.tipcalculator.ui.theme.TipCalculatorTheme
+import com.mvb.tiplify.ui.theme.TiplifyTheme
 import java.text.NumberFormat
 
 class MainActivity : ComponentActivity() {
@@ -38,7 +37,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         setContent {
-            TipCalculatorTheme {
+            TiplifyTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { padding ->
                     TipCalculator(modifier = Modifier.padding(padding))
                 }
@@ -111,7 +110,7 @@ fun TipCalculator(modifier: Modifier = Modifier) {
             ) {
 
                 Text(
-                    text = "Tip Calculator",
+                    text = "Tiplify – Tip Calculator",
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(16.dp),
@@ -341,7 +340,7 @@ fun InfoRow(label: String, value: String) {
 @Preview(showBackground = true)
 @Composable
 fun PreviewTipCalculator() {
-    TipCalculatorTheme {
+    TiplifyTheme {
         TipCalculator()
     }
 }

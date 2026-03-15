@@ -1,4 +1,4 @@
-package com.mvb.tipcalculator.ui.theme
+package com.mvb.tiplify.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
